@@ -6,6 +6,11 @@
 aws s3 cp s3://BUCKET-NAME/TARFILE.tar - | tar -tvf -
 
 
+Para extraer archivos individuales intentar:
+
+aws s3 cp s3://fastq-59samples/data_release2.tar - | tar -xvf - ./data_release2/China-NovoPM-Pharma-IM-PHUSC2019122101.tar.gz
+
+
 """
 
 #Aquí se ingresan el bucket y el nombre del objeto que se quiere inspeccionar
